@@ -12,7 +12,7 @@ const ITEMS = [
 /* Donation list (기부목록) — org rows; row → Payment statement. */
 export default function DonationList({ go }) {
   return (
-    <ScreenScroll bottomPad={100}>
+    <ScreenScroll bottomPad={124}>
       <AppHeader title="기부목록" onBack={() => go("home")} />
       <div style={{ padding: "8px 24px", display: "flex", flexDirection: "column", gap: 12 }}>
         {ITEMS.map((it, i) => (

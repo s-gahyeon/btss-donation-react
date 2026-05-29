@@ -19,7 +19,7 @@ const CAUSES = [
 
 export default function Home({ go }) {
   return (
-    <ScreenScroll bottomPad={100}>
+    <ScreenScroll bottomPad={124}>
       <div style={{ padding: "4px 30px 0" }}>
         {/* Greeting + avatar */}
         <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between" }}>

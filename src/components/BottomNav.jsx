@@ -30,14 +30,15 @@ export default function BottomNav({ active, onNav }) {
         left: 0,
         right: 0,
         bottom: 0,
-        height: 85,
+        minHeight: 85,
         background: "#fff",
         borderRadius: "30px 30px 0 0",
         boxShadow: "var(--shadow-nav)",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-around",
-        padding: "0 30px",
+        // Keep tap targets above the home indicator on notched phones.
+        padding: "0 30px env(safe-area-inset-bottom) 30px",
         zIndex: 10,
       }}
     >

@@ -36,22 +36,16 @@ export default function App() {
   const Current = SCREENS[screen] || Home;
 
   return (
-    <div
-      style={{
-        position: "relative",
-        width: 375,
-        height: 812,
-        background: "#fff",
-        borderRadius: 44,
-        overflow: "hidden",
-        boxShadow: "0 40px 120px rgba(40,60,55,.35), 0 0 0 11px #11201c, 0 0 0 13px #2c3c37",
-      }}
-    >
-      {/* notch */}
-      <div style={{ position: "absolute", top: 0, left: "50%", transform: "translateX(-50%)", width: 164, height: 30, background: "#11201c", borderRadius: "0 0 20px 20px", zIndex: 30 }} />
+    <div className="btss-device">
+      {/* notch — desktop mockup only (hidden on real phones) */}
+      <div className="btss-notch" style={{ position: "absolute", top: 0, left: "50%", transform: "translateX(-50%)", width: 164, height: 30, background: "#11201c", borderRadius: "0 0 20px 20px", zIndex: 30 }} />
 
-      <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column" }}>
-        {!NO_STATUS_BAR.has(screen) && <StatusBar dark={true} />}
+      <div className="btss-shell">
+        {!NO_STATUS_BAR.has(screen) && (
+          <div className="btss-statusbar">
+            <StatusBar dark={true} />
+          </div>
+        )}
         <div key={screen} style={{ flex: 1, display: "flex", flexDirection: "column", minHeight: 0, position: "relative", animation: "btss-fade .18s ease-out" }}>
           <Current go={go} />
         </div>
