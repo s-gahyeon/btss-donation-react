@@ -1,0 +1,19 @@
+{
+  "name": "BTSS — Better To Society Support",
+  "short_name": "BTSS",
+  "description": "BTSS 기부앱 프로토타입",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#8AB5AC",
+  "icons": [
+    {
+      "src": "logo-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

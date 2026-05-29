@@ -1,0 +1,112 @@
+/* ============================================================
+   BTSS — Better To Society Support
+   Design tokens: color + type + spacing + radius + shadow
+   Ported from colors_and_type.css (font paths → /fonts/).
+   ============================================================ */
+
+/* ---------- Fonts — Pretendard, self-hosted (9 weights) ----------
+   Paths include the GitHub Pages base (/btss-donation-app/); Vite leaves
+   absolute url() untouched. Relative to the built CSS in /assets/. */
+@font-face{font-family:"Pretendard";font-weight:900;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Black.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-ExtraBold.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Bold.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-SemiBold.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Medium.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Regular.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:300;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Light.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:200;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-ExtraLight.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:100;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Thin.otf") format("opentype");}
+
+:root{
+  /* ---------- Brand palette ---------- */
+  --btss-sage:        #8AB5AC;
+  --btss-sage-tint:   #DCE9E6;
+  --btss-sage-ghost:  rgba(138,181,172,.30);
+  --btss-forest:      #005034;
+  --btss-forest-2:    #005332;
+
+  --btss-sky:         #83ADF9;
+  --btss-blue:        #4783C4;
+
+  --btss-sand:        #F8CC86;
+  --btss-sand-2:      #F9CB85;
+  --btss-olive:       #97A368;
+  --btss-tangerine:   #F2A678;
+
+  /* Logo / wordmark letter colors (B-T-S-S) */
+  --btss-logo-b: #F2CC8F;
+  --btss-logo-t: #99A468;
+  --btss-logo-s1:#8AB5AC;
+  --btss-logo-s2:#85A9D9;
+
+  /* ---------- Neutrals ---------- */
+  --btss-ink:    #333333;
+  --btss-ink-2:  #666666;
+  --btss-black:  #000000;
+  --btss-white:  #FFFFFF;
+  --btss-line:   #E6E8EC;
+  --btss-surface:#FFFFFF;
+  --btss-bg:     #FFFFFF;
+  --btss-bg-soft:#F2F4F8;
+  --btss-fill:   #C4C4C4;
+
+  /* ---------- Semantic ---------- */
+  --btss-success:#00D037;
+  --btss-danger: #EE0000;
+
+  /* ---------- Type families — unified on Pretendard ---------- */
+  --font-display: "Pretendard", system-ui, sans-serif;
+  --font-body:    "Pretendard", system-ui, sans-serif;
+  --font-mono:    ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ---------- Type scale ---------- */
+  --t-display:  30px;  --t-display-lh:  1.30;  --t-display-w: 500;
+  --t-title:    20px;  --t-title-lh:    1.30;  --t-title-w:   500;
+  --t-body:     16px;  --t-body-lh:     1.50;  --t-body-w:    400;
+  --t-subhead:  15px;  --t-subhead-lh:  1.47;  --t-subhead-w: 400;
+  --t-label:    14px;  --t-label-lh:    1.20;  --t-label-w:   500;
+  --t-caption:  10px;  --t-caption-lh:  1.20;  --t-caption-w: 500;
+  --tracking-tight: -0.01em;
+  --tracking-x:     -0.3px;
+
+  /* ---------- Spacing ---------- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-7: 30px; --space-8: 34px;
+  --gutter: 30px;
+
+  /* ---------- Radius ---------- */
+  --r-sm:   13px;
+  --r-md:   20px;
+  --r-lg:   30px;
+  --r-pill: 999px;
+  --r-full: 50%;
+
+  /* ---------- Elevation ---------- */
+  --shadow-nav:  0 -10px 13px rgba(180,180,180,.25);
+  --shadow-card: 0 8px 20px rgba(120,130,128,.14);
+  --shadow-soft: 0 4px 12px rgba(120,130,128,.10);
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  font-family:var(--font-body);
+  -webkit-font-smoothing:antialiased;
+  background:#e9edf0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+}
+button{font-family:inherit;}
+
+/* Calm screen transition (HANDOFF: gentle 150–200ms ease-out fade). */
+@keyframes btss-fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+
+/* ---------- Semantic type helpers ---------- */
+.btss-display{font-family:var(--font-body);font-size:var(--t-display);line-height:var(--t-display-lh);font-weight:var(--t-display-w);letter-spacing:var(--tracking-tight);color:var(--btss-ink);}
+.btss-title  {font-family:var(--font-display);font-size:var(--t-title);line-height:var(--t-title-lh);font-weight:var(--t-title-w);letter-spacing:var(--tracking-tight);color:var(--btss-ink);}
+.btss-body   {font-family:var(--font-body);font-size:var(--t-body);line-height:var(--t-body-lh);font-weight:var(--t-body-w);color:var(--btss-ink);}
+.btss-subhead{font-family:var(--font-display);font-size:var(--t-subhead);line-height:var(--t-subhead-lh);font-weight:var(--t-subhead-w);letter-spacing:var(--tracking-x);}
+.btss-label  {font-family:var(--font-display);font-size:var(--t-label);line-height:var(--t-label-lh);font-weight:var(--t-label-w);letter-spacing:var(--tracking-tight);color:var(--btss-black);text-transform:uppercase;}
+.btss-caption{font-family:var(--font-display);font-size:var(--t-caption);line-height:var(--t-caption-lh);font-weight:var(--t-caption-w);letter-spacing:var(--tracking-x);}
