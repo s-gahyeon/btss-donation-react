@@ -5,17 +5,17 @@
    ============================================================ */
 
 /* ---------- Fonts — Pretendard, self-hosted (9 weights) ----------
-   Paths include the GitHub Pages base (/btss-donation-app/); Vite leaves
+   Paths include the GitHub Pages base (/btss-donation-react/); Vite leaves
    absolute url() untouched. Relative to the built CSS in /assets/. */
-@font-face{font-family:"Pretendard";font-weight:900;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Black.otf") format("opentype");}
-@font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-ExtraBold.otf") format("opentype");}
-@font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Bold.otf") format("opentype");}
-@font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-SemiBold.otf") format("opentype");}
-@font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Medium.otf") format("opentype");}
-@font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Regular.otf") format("opentype");}
-@font-face{font-family:"Pretendard";font-weight:300;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Light.otf") format("opentype");}
-@font-face{font-family:"Pretendard";font-weight:200;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-ExtraLight.otf") format("opentype");}
-@font-face{font-family:"Pretendard";font-weight:100;font-style:normal;font-display:swap;src:url("/btss-donation-app/fonts/Pretendard-Thin.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:900;font-style:normal;font-display:swap;src:url("/btss-donation-react/fonts/Pretendard-Black.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("/btss-donation-react/fonts/Pretendard-ExtraBold.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;src:url("/btss-donation-react/fonts/Pretendard-Bold.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;src:url("/btss-donation-react/fonts/Pretendard-SemiBold.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("/btss-donation-react/fonts/Pretendard-Medium.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("/btss-donation-react/fonts/Pretendard-Regular.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:300;font-style:normal;font-display:swap;src:url("/btss-donation-react/fonts/Pretendard-Light.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:200;font-style:normal;font-display:swap;src:url("/btss-donation-react/fonts/Pretendard-ExtraLight.otf") format("opentype");}
+@font-face{font-family:"Pretendard";font-weight:100;font-style:normal;font-display:swap;src:url("/btss-donation-react/fonts/Pretendard-Thin.otf") format("opentype");}
 
 :root{
   /* ---------- Brand palette ---------- */
