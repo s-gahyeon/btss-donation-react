@@ -39,6 +39,3 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-
-
-미아룸나ㅣ어리ㅏ;ㅁ어리;ㅏ멍ㄴ;라
